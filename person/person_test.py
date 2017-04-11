@@ -1,0 +1,24 @@
+import unittest
+from person import Staff, Fellow
+class TestPerson(unittest.TestCase):
+	"""Test instance of Person added"""
+	
+	def setUp(self):
+		self.fellow = Fellow("George",  "Y")
+		self.staff = Staff("Tim")
+
+	def test_person_role_is_fellow(self):
+		self.assertEqual(
+			self.fellow.position, 'fellow')
+			
+
+	def test_person_role_is_staff(self):
+		self.assertEqual(
+			self.staff.position, 'staff')
+			
+	def test_staff_invalid_accomodation_option(self):
+		self.assertEqual(
+			self.staff.livingspace,'N')
+			
+if __name__ == '__main__':
+    unittest.main(verbosity=2)  
