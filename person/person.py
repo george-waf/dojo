@@ -1,17 +1,23 @@
 class Person(object):
-    def __init__(self, name):
-        self.name = name
-    
+	
+	def __init__(self,first_name):
+		self.name = first_name
+		
+
+
 class Staff(Person):
-    def __init__(self, name):
-        self.name = name
-        self.position = 'staff'
-        self.livingspace = 'N'
+	
+	def __init__(self, first_name, second_name):
+		super(Staff, self).__init__(first_name)
+		self.position = "staff"
+		self.wants_accomodation = "n"
+		
 
 class Fellow(Person):
-    def __init__(self, name, livingspace='N'):
-        self.name = name
-        self.position = 'fellow'
-        if livingspace:
-            self.livingspace = livingspace
+	
+	def __init__(self, first_name,  wants_accomodation="N"):
+		super(Fellow, self).__init__(first_name)
+		self.position = "fellow"
+		self.wants_accomodation = wants_accomodation
+
 
