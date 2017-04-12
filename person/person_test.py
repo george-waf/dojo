@@ -18,7 +18,7 @@ class TestPerson(unittest.TestCase):
 			
 	def test_staff_invalid_accomodation_option(self):
 		self.assertEqual(
-			self.staff.livingspace,'N')
+			self.staff.wants_accomodation,'n')
 			
 if __name__ == '__main__':
     unittest.main(verbosity=2)  
