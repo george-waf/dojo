@@ -4,8 +4,8 @@ class TestPerson(unittest.TestCase):
 	"""Test instance of Person added"""
 	
 	def setUp(self):
-		self.fellow = Fellow("George",  "Y")
-		self.staff = Staff("Tim")
+		self.fellow = Fellow('george')
+		self.staff = Staff('tim','juma')
 
 	def test_person_role_is_fellow(self):
 		self.assertEqual(
