@@ -16,7 +16,7 @@ class Staff(Person):
 class Fellow(Person):
 	
 	def __init__(self, first_name,  wants_accomodation="N"):
-		super(Fellow, self).__init__(first_name)
+		super(Fellow, self).__init__(first_name,second_name)
 		self.position = "fellow"
 		self.wants_accomodation = wants_accomodation
 
