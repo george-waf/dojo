@@ -1,10 +1,10 @@
 import unittest
 from person import Staff, Fellow
 class TestPerson(unittest.TestCase):
-	"""Test instance of Person added"""
+	
 	
 	def setUp(self):
-		self.fellow = Fellow('george')
+		self.fellow = Fellow('george','wafula')
 		self.staff = Staff('tim','juma')
 
 	def test_person_role_is_fellow(self):
